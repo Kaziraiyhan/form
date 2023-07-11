@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styel.css">
+</head>
+<body>
+
+<div class="container">
+<div class="form">
+    <header>Registation Form</header>
+
+    <form   action="" onsubmit="return check_form()">
+        <div class="colums">
+            <div class="input_box">
+                    <div id="first_name">
+                    
+                        <label for="f_name">First name</label>
+                        <input type="text" id="first_name_input"  placeholder=" First Name ">
+                        
+                    </div>
+            </div>
+             <div class="input_box">
+                    <div id="last_name">
+
+                        <label for="l_name">Last name</label>
+                        <input type="text" id="last_name_input" placeholder=" Last Name" >
+                    </div>
+            </div>   
+         </div>
+
+            <div class="input_box">
+                <div id="email">
+
+                    <label for="email_input">Email Address</label>
+                    <input type="text" id="email_input" placeholder=" Your Email Address" >
+                </div>
+             </div>
+            <div class="input_box">
+                <div id="con_email">
+
+                    <label for="con_email_input">Conform Email Address</label>
+                    <input type="text" id="con_email_input" placeholder=" Conform Email Addres" >
+                </div>
+             </div>
+            <div class="colums">
+                <div class="input_box">
+                    <div id="password">
+
+                                <h2  class="showhide_pass"   > <i class="fa-regular showhide fa-eye"></i> </h2>
+                               
+                                
+                        <label for="password_input">Enter Password  </label>
+                        
+                        <input type="password" id="password_input" placeholder=" Enter your password" oninput="togglePassword()" >
+                    </div>
+                 </div>
+                <div class="input_box">
+
+                    <div id="con_password">
+                        <h2  class="con_showhide_pass" >  <i class="fa-regular showhide fa-eye"></i> </h2>
+                        <label for="con_password_input">Conform Password</label>
+                        <input type="password" id="con_password_input"  placeholder="Conform your password"  oninput=" con_togglePassword()" >
+                    </div>
+                 </div>
+            </div> 
+            <div class="colums">
+                <div class="input_box">
+                    <div id="number">
+    
+                        <label for="number_input">Last name</label>
+                        <input type="text" id="number_input" placeholder=" Your Phone Number" >
+                    </div>
+                 </div>
+                <div class="input_box">
+                    <div id="barth_date">
+    
+                        <label for="barth_date_input">Barth Date</label>
+                        <input type="date" id="barth_date_input"   >
+                    </div>
+                 </div>
+            </div> 
+           
+
+            <h3 class="gender_title">Gender</h3>
+            <div id="gender_wrapper">
+          
+                <div class="gender">
+                    <input type="radio" id="check_male" name="gender" value="option1"  >
+                    <label for="check_male"> Male</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check_female" name="gender" value="option2"  >
+                    <label for="check_female"> Female</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="check_other" name="gender"  value="option3" >
+                    <label for="check_other"> other</label>
+                </div>
+            </div>
+
+            <div class="input_box">
+                <div id="addres">
+
+                    <label for="address_input">Address</label>
+                    <input type="text" id="address_input" placeholder=" Enter you Addres Here" >
+                </div>
+             </div>
+             <div class="colums">
+               
+                <div class="input_box">
+                    <h3 id="city_select"> Select Country</h3>
+                    <select name="city" id="city">
+                        <option selected disabled value="">Chose your city </option>
+                        <option value="Cumilla"> Cumilla</option>
+                        <option value="Dhaka"> Dhaka</option>
+                        <option value="Nowakhali"> Nowakhali</option>
+                        <option value="Barisal"> Barisal</option>
+                        
+                    </select>
+                </div>
+        
+                <div class="input_box">
+                    <h3 id="country_select"> Select Country</h3>
+                    <select name="country" id="country" >
+                        <option selected disabled value=""> Chose Your country </option>
+                        <option value="Bangladesh"> Bangladesh</option>
+                        <option value="India"> India</option>
+                        <option value="Us"> Us</option>
+                        <option value=""> Uk</option>
+                        <option value=""> Indonisia</option>
+                    </select>
+                </div>
+
+             </div>
+
+        <input id="btn" type="submit" value="Submit">
+
+    </form>
+</div>
+
+         
+      
+
+     
+      
+</div>
+    
+
+
+
+
+    <!-- <script src="./js/all.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
